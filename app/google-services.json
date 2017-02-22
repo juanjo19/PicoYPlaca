@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1022230104855",
+    "firebase_url": "https://pico-y-placa-e8179.firebaseio.com",
+    "project_id": "pico-y-placa-e8179",
+    "storage_bucket": "pico-y-placa-e8179.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022230104855:android:3cd527c7151a057b",
+        "android_client_info": {
+          "package_name": "com.juanjose.picoyplaca"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1022230104855-91g8jmjbl3ucs5mgfv54qmkab1u8gj69.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD93iB6U4d4mX3YLw0e4ntthXPd3q_fFkU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
