@@ -28,7 +28,7 @@
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/editTextUsername"
-        android:hint="Username"
+        android:hint="Email"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/editTextPassword"
         android:layout_alignStart="@+id/editTextPassword" />

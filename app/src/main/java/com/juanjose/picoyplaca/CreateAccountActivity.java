@@ -65,23 +65,23 @@ public class CreateAccountActivity extends AppCompatActivity {
                 placaUsed.equals("") || passwordUsed.equals("") || passwordConfirmationUsed.equals("")
                 || emailUsed.equals("")){
             Toast.makeText(this, "Complete all form", Toast.LENGTH_SHORT).show();
-        }
-        if(!passwordUsed.equals(passwordConfirmationUsed)){
+        }else if(!passwordUsed.equals(passwordConfirmationUsed)){
             Toast.makeText(this, "password doesn't match", Toast.LENGTH_SHORT).show();
-        }
+        }else{
         firebaseAuth.createUserWithEmailAndPassword(emailUsed, passwordUsed)
                 .addOnCompleteListener(CreateAccountActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         Log.e("test", "error es...."+task);
                         if(!task.isSuccessful()){
-                            Toast.makeText(CreateAccountActivity.this, "Auth Failed my so...", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(CreateAccountActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }else{
                             startActivity(new Intent(CreateAccountActivity.this, LoginActivity.class));
                             finish();
                         }
                     }
                 });
+        }
 
     }
 }

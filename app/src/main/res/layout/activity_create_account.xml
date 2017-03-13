@@ -79,9 +79,9 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/editTextPasswordCreate"
-        android:hint="Contraseña"
-        android:layout_below="@+id/editTextConfirmPass"
+        android:id="@+id/editTextConfirmPass"
+        android:hint="Confirmar Contraseña"
+        android:layout_below="@+id/editTextPasswordCreate"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -90,9 +90,9 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/editTextConfirmPass"
-        android:hint="Confirmar Contraseña"
-        android:layout_below="@+id/editTextEmail"
+        android:id="@+id/editTextPasswordCreate"
+        android:hint="Contraseña"
+        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
